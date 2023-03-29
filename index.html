@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Usuario</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- COMENTARIO -->
+    <div class="container">
+        <div class="user-card">
+            <div class="card-header">
+                <img src="images/icons/imagePersonal.jpg" alt="imagePersonal" class="avatar" ondblclick="elimina(this)" >
+            </div>
+            <div class="card-body">
+                <h1>Cristian Cortés</h1>
+                <h3 id="locacion">
+                    <img src="images/icons/map-marker.png" alt="pin" class="icono" ondblclick="elimina(this)">
+                    Medellin, Colombia
+                </h3>
+                <p>
+                    Desarrollador, Ingeniero, <span onclick="cambiar_texto(this)">Resuelve problemas</span>
+                </p>
+                <p>
+                    <a href="#" onclick="hola_mundo()">
+                        <img src="images/icons/gear.png" alt="engrane" class="icono icono_engrane">
+                        editar perfil
+                    </a>
+                </p>
+                <button onclick="redirecciona()" onmouseover="over(this)" onmouseout="out(this, 1, 'A')">Boton 1</button>
+                <button onclick="modifica_titulo()" onmouseover="over(this)" onmouseout="out(this, 2, 'B')">Boton 2</button>
+                <button onclick="suma_like(this, 0)">Boton 3</button>
+                <button onclick="suma_like(this, 1)">Boton 4</button>
+                <button onclick="cambiar_color()">Cambiar color de letra locación</button>
+                <button onclick="cambiar_imagen()">Cambiar imagen</button>
+                <button id="btn" class="btn-amarillo otra-clase" onclick="cambiar_clase()">Cambiar Clase</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
